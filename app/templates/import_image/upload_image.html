@@ -1,0 +1,16 @@
+<!-- upload_image.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Import Image</title>
+</head>
+<body>
+    <h1>Importez une image</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="image">Sélectionnez une image à importer:</label>
+        <input type="file" name="image" accept="image/*">
+        <input type="submit" value="Importer">
+    </form>
+</body>
+</html>
